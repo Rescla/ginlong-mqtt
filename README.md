@@ -45,5 +45,7 @@ Number Solis_kWhTotal "kWh total [%.2f kWh]" (Solis) { mqtt="<[mymosquitto:ginlo
 5. These items should now be accessible in your rules. If you have influxdb and grafana set up, you should also be able to start producing graphs
 
 
+# Docker
 
+Rename `config.ini-default` to `config.ini` and change the required parameters. Then build the image and set up port forwarding for the specified port.
 
