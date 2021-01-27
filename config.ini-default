@@ -6,3 +6,4 @@ listen_port = 9999
 client_id = ginlong
 mqtt_server = localhost
 mqtt_port = 1883
+mqtt_auth = None

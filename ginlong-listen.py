@@ -43,6 +43,7 @@ listen_port = int(config.get('DEFAULT', 'listen_port'))           # Port to list
 client_id = config.get('MQTT', 'client_id')                  # MQTT Client ID
 mqtt_server = config.get('MQTT', 'mqtt_server')              # MQTT Address
 mqtt_port = int(config.get('MQTT', 'mqtt_port'))                  # MQTT Port
+mqtt_quth = int(config.get('MQTT', 'mqtt_auth'))                  # MQTT Auth
 
 
 sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
