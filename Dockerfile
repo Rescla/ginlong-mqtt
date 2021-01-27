@@ -1,4 +1,4 @@
-FROM python:3
+FROM python:2
 
 COPY ginlong-listen.py requirements.txt ./
 COPY config.ini-default ./config.ini
