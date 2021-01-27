@@ -5,4 +5,4 @@ COPY config.ini-default ./config.ini
 
 RUN pip install --no-cache-dir -r requirements.txt
 
-CMD ["/bin/bash", "./ginlong-mqtt.init"]
+CMD ["/bin/bash", "./ginlong-mqtt.init", "start"]
