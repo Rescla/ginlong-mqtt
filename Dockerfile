@@ -5,4 +5,4 @@ COPY config.ini-default ./config.ini
 
 RUN pip install --no-cache-dir -r requirements.txt
 
-CMD ["python", "ginlong-listen.py"]
+ENTRYPOINT ["python", "ginlong-listen.py"]
