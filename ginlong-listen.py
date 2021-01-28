@@ -57,7 +57,7 @@ while True:
         print 'waiting for a connection'
     conn,addr = sock.accept()
     try:
-        #print >>sys.stderr, 'connection from', addr
+        print 'connection from', addr
         # while True:
             rawdata = conn.recv(1000)                                 # Read in a chunk of data
             hexdata = binascii.hexlify(rawdata)                       # Convert to hex for easier processing
