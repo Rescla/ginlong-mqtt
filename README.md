@@ -51,3 +51,4 @@ Number Solis_kWhTotal "kWh total [%.2f kWh]" (Solis) { mqtt="<[mymosquitto:ginlo
 
 Rename `config.ini-default` to `config.ini` and change the required parameters. Then build the image and set up port forwarding for the specified port.
 
+See also https://hub.docker.com/r/rescla/ginlong-mqtt

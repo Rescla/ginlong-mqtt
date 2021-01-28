@@ -43,7 +43,7 @@ listen_port = int(config.get('DEFAULT', 'listen_port'))      # Port to listen on
 client_id = config.get('MQTT', 'client_id')                  # MQTT Client ID
 mqtt_server = config.get('MQTT', 'mqtt_server')              # MQTT Address
 mqtt_port = int(config.get('MQTT', 'mqtt_port'))             # MQTT Port
-mqtt_quth = config.get('MQTT', 'mqtt_auth')                 # MQTT Auth
+mqtt_auth = config.get('MQTT', 'mqtt_auth')                 # MQTT Auth
 
 
 sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
@@ -164,7 +164,7 @@ while True:
                     print >>sys.stderr, 'kwhtotal: ', kwhtotal
                 msgs.append((mqtt_topic + "kwhtotal", kwhtotal, 0, False))
 
-                publish.multiple(msgs, hostname=mqtt_server)
+                publish.multiple(msgs, hostname=mqtt_server, auth=mqtt_auth)
                 file = open("rawlog",'a')
                 file.write(timestamp + ' ' + hexdata + '\n')
                 file.close()
